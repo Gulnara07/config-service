@@ -18,3 +18,4 @@ eureka:
       defaultZone: http://discovery-service:8761/eureka/
   instance:
     prefer-ip-address: true
+
