@@ -1,0 +1,17 @@
+server:
+  port: 8082
+
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ${MAIL_USERNAME:test@gmail.com}
+    password: ${MAIL_PASSWORD:test}
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.starttls.enable: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://discovery-service:8761/eureka/
